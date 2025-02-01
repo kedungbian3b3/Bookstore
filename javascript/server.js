@@ -13,8 +13,8 @@ app.use(cors());
 // Phục vụ các file tĩnh từ các thư mục cụ thể
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/css', express.static(path.join(__dirname, 'css')));
-app.use('/javascript', express.static(path.join(__dirname, 'javascript')));
 app.use('/img', express.static(path.join(__dirname, 'img')));
+app.use('/javascript', express.static(path.join(__dirname, 'javascript')));
 
 // Route phục vụ trang chủ (index.html)
 app.get("/", (req, res) => {
@@ -29,7 +29,7 @@ app.post("/save_order", (req, res) => {
         return res.status(400).json({ message: "Dữ liệu đơn hàng không hợp lệ!" });
     }
 
-    const dataDir = path.join(__dirname, "Data");
+    const dataDir = path.join(__dirname, "javascript", "Data");
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
 
     const orderDetailsFile = path.join(dataDir, "order_details.csv");
@@ -74,4 +74,3 @@ app.listen(PORT, () => {
 });
 
 module.exports = app; // Cần cho Vercel xử lý serverless
-
