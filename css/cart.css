@@ -1,0 +1,76 @@
+/* Phần Đầu */
+#Td1{
+    text-align: center;
+    color: rgba(48,154,172,255);
+    h1{
+        font-family: "Brush Script MT";
+        font-size: 3em;
+    }
+}
+#tag{
+    width: 90%;
+    margin: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #d0e4ec;
+    text-align: center;
+    a{
+        margin-right: 5%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    img{
+        width: 2%;
+    }
+    button{
+        border: hidden;
+        width: 5%;
+        background-color: white;
+    }
+}
+nav #tag ul li{
+    display: inline;
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    background: black;
+    color: white;
+    padding: 20px;
+}
+
+table {
+    width: 80%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+th {
+    background: #333;
+    color: white;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ff4c4c;
+    color: white;
+}

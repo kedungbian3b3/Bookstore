@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="/img/book/VNU_IS_logo_(2).png">
+        <title>Events | Book Selling hihi`</title>
+        <style>
+            /* Phần Đầu */
+#Td1{
+    text-align: center;
+    color: rgba(48,154,172,255);
+    h1{
+        font-family: "Brush Script MT";
+        font-size: 3em;
+    }
+}
+#tag{
+    width: 90%;
+    margin: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #d0e4ec;
+    text-align: center;
+    a{
+        margin-right: 5%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    img{
+        width: 2%;
+    }
+    button{
+        border: hidden;
+        width: 5%;
+        background-color: white;
+    }
+}
+nav #tag ul li{
+    display: inline;
+}
+
+/*Phần thân */
+.contain{
+    text-align: center;
+    margin-top: 10%;
+    a{
+        color: black;
+    }
+}
+
+
+
+/* Phần Đuôi */
+.foott{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7f1f0;
+    width: 90%;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: 15% 5% 0;
+}
+.Join{
+    
+    margin-top: 25px;
+    display: flex;
+    padding: 0 15px;
+    #email{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #e7f1f0;
+        outline: none;
+    }
+}
+.foot{
+    display: flex;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+}
+.but button{
+    height: 30px;
+    border-radius: 40px;
+    background-color: #309aac;
+    color: white;
+}
+
+/* Phần responsive */
+@media screen and (max-width: 1024px) {
+    #tag a{
+        margin-right: 4%;
+    }
+    #tag button{
+        width: 8%;
+    }
+    .container{
+        height: 50vh;
+    }
+    .foott{
+        margin: 40vh 5% 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #tag{
+        width: 100%;
+    }
+    #tag a{
+        font-size: 0.8em;
+    }
+    #tag img{
+        width: 2em;
+    }
+    #tag button{
+        width: 15%;
+    }
+    .foott{
+        width: 100%;
+        margin: 40vh 0;
+        font-size: 0.9em;
+    }
+    .but button{
+        width: 100px;
+        height: 35px;
+        border-radius: 40px;
+        background-color: #309aac;
+        color: white;
+    }
+    #Submitt{
+        font-size: 0.8em;
+    }
+}
+
+@media screen and (max-width: 480px){
+    *{
+        width: 450px;
+    }
+    #tag{
+        display: fixed;
+    }
+    #tag a{
+        font-size: 0.7em;
+        margin-right: 2%;
+    }
+    #tag button{
+        width: 10%;
+    }
+    .chatbox .chat-name input{
+        width: 170px;
+        height: 15px;
+    }
+    .in input{
+        width: 100px;
+    }
+    .foott{
+        margin: 50vh 0;
+    }
+}
+        </style>
+    </head>
+    <body>
+        <div id="Td1">
+            <h1><em>Little Belle Addventures</em></h1>
+            <p>A Book Series by Jamie Olsen</p>
+        </div>
+        <nav>
+        <div id="tag">
+            
+            <ul>
+                <li><a href="/public/index.html">Home</a></li>
+                    <li><a href="/public/Book.html">Book</a></li>
+                    <li><a href="/public/Aboutus.html">About us</a></li>
+                    <li><a href="/public/event.html">Events</a></li>
+                    <li><a href="/public/cus.html">Contact Us</a></li>
+                    <li><a href="/public/cart.html" class="cart-link"><img src="/img/home/Gio hang.png"></a></li>
+                    <li><button ><a href="/public/Login.html" style="color: rgba(48,154,172,255);">Log in </a></button></li>
+            </ul>
+        
+        </div>
+        </nav>
+        <div class="contain">
+            <h2>Thank you! See you soon</h2>
+            <p>An email with the event's details was sent to you</p>
+            <a href="/public/event.html">Quay lại trang web</a>
+        </div>
+        <section>
+            <footer>
+                <div class="foott"> 
+                    <form>
+                    <div class="Join">
+                        <div class="Join chat"> Join our Mailing List </div>
+                    
+                    <div class="Join in"><input type="email" id="email" placeholder="Enter your email here*"></div>
+                    <div class="Join but"><button type="button" onclick="submitfuntion2()">Subscribe Now</button></div>
+                    <script>
+                        function submitfuntion2(){
+                            document.getElementById('Subscribe Now').innerHTML = 'Thanks for submitting';
+                            setTimeout(function() {
+                                document.getElementById('Subscribe Now').innerHTML = '';
+                            }, 2000);
+                        }
+                    </script>
+                    </div>
+                    <div class="ja"><p id="Subscribe Now"></p></div>
+                    </form>
+                    <div class="foot">
+                            <div class="foot face">Facebook</div>
+                            <div class="foot Twitter">Twitter</div>
+                            <div class="foot Ing">Instagram</div>
+                    </div>
+                    
+                </div>
+            </footer>
+        </section>
+    </body>
+    
+</html>

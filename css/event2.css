@@ -1,0 +1,141 @@
+/* Phần Đầu */
+#Td1{
+    text-align: center;
+    color: rgba(48,154,172,255);
+    h1{
+        font-family: "Brush Script MT";
+        font-size: 3em;
+    }
+}
+#tag{
+    width: 90%;
+    margin: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #d0e4ec;
+    text-align: center;
+    a{
+        margin-right: 5%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    img{
+        width: 2%;
+    }
+    button{
+        border: hidden;
+        width: 5%;
+        background-color: white;
+    }
+}
+nav #tag ul li{
+    display: inline;
+}
+
+
+
+/* Phần thân */
+.container{
+    position: relative;
+    background-color: #e7f1f0;
+    max-width: 90%;
+    height: 400px;
+    margin: auto;
+}
+#con{
+    margin: auto;
+    padding: 20px;
+    width: 40%;
+    text-align: center;
+}
+.box{
+    width: 500px;
+    height: 100px;
+    position: absolute;
+}
+
+.box-a{
+    img{
+        width: 120%;
+    }
+    top: 70%;
+    left:31%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    p{
+        text-align: center;
+    }
+    button{
+        background-color: #6eb8c5;
+        width: 100px;
+        border-radius: 15px;
+        text-align: center;
+        a{
+            width: 100px;
+            text-decoration: none;
+            color: white;
+        }
+    }
+}
+
+
+
+/* Phần Đuôi */
+.foott{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7f1f0;
+    width: 90%;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: 45% 70px 0;
+}
+.Join{
+    
+    margin-top: 25px;
+    display: flex;
+    padding: 0 15px;
+    #email{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #e7f1f0;
+    }
+    button{
+        border-radius: 15px;
+        background-color: #309aac;
+        color: white;
+        
+    }
+}
+.foot{
+    display: flex;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+}
+.rev{
+    display: flex;
+    justify-content:space-around;
+    align-items:center;
+
+    p{
+        margin: auto;
+        width: 30%;
+    }
+}
+.rev1{
+    text-align: center;
+   
+}
+.rev2{
+    text-align: center;
+    
+}
+.rev3{
+    text-align: center;
+    
+}

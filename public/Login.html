@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="/img/book/VNU_IS_logo_(2).png">
+        <title>Book Store | Log in</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="/css/login.css">
+        <link rel="stylesheet" href="responsiveLogin.css">
+    </head>
+    <body>
+        <section class="section2">
+            <header>
+                <h2 class="logo">Book Store</h2>
+                <nav class="navigation">
+                    <a href="/public/index.html">Home</a>
+                    <a href="/public/Book.html">Book</a>
+                    <a href="/public/Aboutus.html">About us</a>
+                    <a href="/public/event.html">Event</a>
+                    <a href="/public/cus.html">Contact us</a>
+                    <button class="btnLogin-popup">Login</button>
+                </nav>
+            </header>
+        </section>
+        <section class="section1">
+                <div class="login-box">
+                    <form action="">
+                        <h2>Login</h2>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="mail-outline"></ion-icon></span> <!--Code icon từ web-->
+                            <input type="email" required>
+                            <label>Email</label>
+                        </div>
+                        <div class="input-box">
+                            <span class="icon"><ion-icon name="lock-closed-outline"></ion-icon></span> <!--Code icon từ web-->
+                            <input type="password" required>
+                            <label>Password</label>
+                        </div>
+                        <div class="remember-forgot">
+                            <label><input type="checkbox">Remember me</label>
+                            <a href="#" onclick="window.alert('Chức năng này hiện không khả dụng')">Forgot password?</a> 
+                        </div>
+                        <button type="button" onclick="window.alert('Chức năng đăng nhập hiện không khả dụng, mời bạn quay lại')">Login</button>
+                        <div class="register-link">
+                            <p>Don't have an account?<a href="#" onclick="window.alert('Chức năng này hiện không khả dụng')"> Register</a></p>
+                        </div>
+                    </form>
+                </div>
+        </section>
+        <!--Code để lấy icon-->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    </body>
+</html>

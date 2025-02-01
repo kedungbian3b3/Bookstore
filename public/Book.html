@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">    
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home | Book Selling</title>  
+        <link rel="stylesheet" href="/css/Book.css" >  
+        <link rel="shortcut icon" type="image/png" href="/img/book/VNU_IS_logo_(2).png">
+        <script src="/javascript/book.js"></script>
+    </head>
+    <body>
+        <section>
+            <div id="Td1">
+                <h1><em>Little Belle Addventures</em></h1>
+                <p>A Book Series by Jamie Olsen</p>
+            </div>
+            <nav>
+            <div id="tag">
+                
+                <ul>
+                    <li><a href="/public/index.html">Home</a></li>
+                    <li><a href="/public/Book.html">Book</a></li>
+                    <li><a href="/public/Aboutus.html">About us</a></li>
+                    <li><a href="/public/event.html">Events</a></li>
+                    <li><a href="/public/cus.html">Contact Us</a></li>
+                    <li><a href="/public/cart.html" class="cart-link"><img src="/img/home/Gio hang.png"></a></li>
+                    <li><button ><a href="/public/Login.html" style="color: rgba(48,154,172,255);">Log in </a></button></li>
+                </ul>
+            
+            </div>
+            </nav>
+        </section>
+        
+        <section>
+            <div class="ph">
+                <p>Our</p>
+                <h2>BOOKSTORE</h2>
+            </div>
+            
+            <section>
+                <!-- Search Bar -->
+                <div style="text-align: center; margin: 20px;">
+                    <input
+                        type="text"
+                        id="searchBar"
+                        placeholder="Nhập tên sách để tìm kiếm..."
+                        style="width: 30%; padding: 10px; border: 2px solid black; border-radius: 5px;"
+                        onkeyup="searchBooks()"
+                    />
+                </div>
+            </section>
+
+            <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Category</button>
+                <div id="myDropdown" class="dropdown-content">
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('novels')"> Novels</button>
+                        <button class="btn" onclick="filterSelection('social')"> Social</button>
+                        <button class="btn" onclick="filterSelection('lifestyle')"> LifeStyle</button>
+                        <button class="btn" onclick="filterSelection('travel')"> Travel guides</button>
+                    </div>
+                  
+                </div>
+            </div>             
+              <div class="vl"></div>
+
+              <div class="container">
+                <div class="filterDiv social lifestyle">
+                    <div class="book" data-name="Đắc Nhân Tâm" data-price="108000" data-category="Tâm Lý - Kỹ Năng" data-image="/img/book/dacnhantam.png">
+                        <div class="book1">
+                            <img src="/img/book/dacnhantam.png" alt="Đắc Nhân Tâm">
+                        </div>   
+                        <p>Đắc Nhân Tâm</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>                    
+                </div>
+            
+                <div class="filterDiv novels">
+                    <div class="book" data-name="Hiểu về trái tim" data-price="108000" data-category="Tâm Lý - Kỹ Năng" data-image="/img/book/hieuvetraitim.png">
+                        <div class="book1">
+                            <img src="/img/book/hieuvetraitim.png">
+                        </div>   
+                        <p>Hiểu về trái tim</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="filterDiv social travel">
+                    <div class="book" data-name="Muôn Kiếp Nhân Sinh" data-price="108000" data-category="Tâm Linh - Triết Học" data-image="/img/book/muonkiepnhansinh.png">
+                        <div class="book1">
+                            <img src="/img/book/muonkiepnhansinh.png">
+                        </div>   
+                        <p>Muôn Kiếp Nhân Sinh</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="filterDiv novels travel">
+                    <div class="book" data-name="Làm bạn với bầu trời" data-price="108000" data-category="Thiếu Nhi" data-image="/img/book/lambanvoibautroi.png">
+                        <div class="book1">
+                            <img src="/img/book/lambanvoibautroi.png">
+                        </div>   
+                        <p>Làm bạn với bầu trời</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="filterDiv social lifestyle">
+                    <div class="book" data-name="Thiên tài bên trái, kẻ ác bên phải" data-price="108000" data-category="Tâm Lý - Khoa Học" data-image="/img/book/thienac.png">
+                        <div class="book1">
+                            <img src="/img/book/thienac.png">
+                        </div>   
+                        <p>Thiên tài bên trái, kẻ ác bên phải</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="filterDiv novels travel">
+                    <div class="book" data-name="Hoàng Tử Bé" data-price="108000" data-category="Thiếu Nhi" data-image="/img/book/hoangtube.png">
+                        <div class="book1">
+                            <img src="/img/book/hoangtube.png">
+                        </div>   
+                        <p>Hoàng Tử Bé</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="filterDiv travel">
+                    <div class="book" data-name="Đi tìm lẽ sống" data-price="108000" data-category="Triết Học - Tư Duy" data-image="/img/book/ditimlesong.png">
+                        <div class="book1">
+                            <img src="/img/book/ditimlesong.png">
+                        </div>   
+                        <p>Đi tìm lẽ sống</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="filterDiv social">
+                    <div class="book" data-name="Sự im lặng của bầy cừu" data-price="108000" data-category="Trinh Thám - Hình Sự" data-image="/img/book/cuu.png">
+                        <div class="book1">
+                            <img src="/img/book/cuu.png">
+                        </div>   
+                        <p>Sự im lặng của bầy cừu</p>
+                        <p>108.000 đ</p>
+                        <div class="themhang">
+                            <button onclick="addToCart(this)">Thêm vào giỏ hàng</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+              
+              
+              <script>
+              filterSelection("all")
+              function filterSelection(c) {
+                var x, i;
+                x = document.getElementsByClassName("filterDiv");
+                if (c == "all") c = "";
+                for (i = 0; i < x.length; i++) {
+                  w3RemoveClass(x[i], "show");
+                  if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+                }
+              }
+              
+              function w3AddClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+                }
+              }
+              
+              function w3RemoveClass(element, name) {
+                var i, arr1, arr2;
+                arr1 = element.className.split(" ");
+                arr2 = name.split(" ");
+                for (i = 0; i < arr2.length; i++) {
+                  while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                  }
+                }
+                element.className = arr1.join(" ");
+              }
+              
+              </script>
+        </section>
+
+        <section>
+            <footer>
+                <div class="foott"> 
+                    <form>
+                    <div class="Join">
+                        <div class="Join chat"> Join our Mailing List </div>
+                    
+                    <div class="Join in"><input type="email" id="email" placeholder="Enter your email here*"></div>
+                    <div class="Join but"><button type="button" onclick="submitfuntion2()">Subscribe Now</button></div>
+                    <script>
+                        function submitfuntion2(){
+                            document.getElementById('Subscribe Now').innerHTML = 'Thanks for submitting';
+                            setTimeout(function() {
+                                document.getElementById('Subscribe Now').innerHTML = '';
+                            }, 2000);
+                        }
+                    </script>
+                    </div>
+                    <div class="ja"><p id="Subscribe Now"></p></div>
+                    </form>
+                    <div class="foot">
+                            <div class="foot face">Facebook</div>
+                            <div class="foot Twitter">Twitter</div>
+                            <div class="foot Ing">Instagram</div>
+                    </div>
+                    
+                </div>
+            </footer>
+        </section>
+    </body>
+</html>

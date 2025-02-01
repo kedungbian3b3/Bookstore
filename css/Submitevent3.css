@@ -1,0 +1,119 @@
+/* Phần Đầu */
+#Td1{
+    text-align: center;
+    color: rgba(48,154,172,255);
+    h1{
+        font-family: "Brush Script MT";
+        font-size: 3em;
+    }
+}
+#tag{
+    width: 90%;
+    margin: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #d0e4ec;
+    text-align: center;
+    a{
+        margin-right: 5%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    img{
+        width: 2%;
+    }
+    button{
+        border: hidden;
+        width: 5%;
+        background-color: white;
+    }
+}
+nav #tag ul li{
+    display: inline;
+}
+/* Phần Thân */
+.container{
+    margin: 70px 30% 0;
+    display: flex;
+    fieldset{
+        border: hidden;
+    }
+    button{
+        width: 360px;
+        height: 50px;
+        margin: 0 15px;
+        border-radius: 30px;
+        background-color: #6eb8c5;
+        color: white;
+    }
+}
+.container2{
+    margin-top: 20px;
+    border: 1px solid black;
+    width: 200px;
+    height: 150px;
+    p{
+        margin: 5px 20px;
+    }
+}
+.tails{
+    display: flex;
+    flex-direction: column;
+}
+.box{
+    width: 30%;
+    display: flex;
+}
+.box-b{
+    margin: 0 20px;
+}
+#email{
+    width: 350px;
+}
+#Lname{
+    height: 30px;
+}
+#email{
+    height: 30px;
+}   
+#Fname{
+    height: 30px;
+}
+
+/* Phần Đuôi */
+.foott{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7f1f0;
+    width: 90%;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: 15% 5% 0;
+}
+.Join{
+    
+    margin-top: 25px;
+    display: flex;
+    padding: 0 15px;
+    #email{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #e7f1f0;
+        outline: none;
+    }
+}
+.foot{
+    display: flex;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+}
+.but button{
+    height: 30px;
+    border-radius: 40px;
+    background-color: #309aac;
+    color: white;
+}

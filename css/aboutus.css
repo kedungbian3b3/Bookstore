@@ -1,0 +1,307 @@
+/* Phần Đầu */
+*{
+    margin: 10px 0 10px 0;
+    padding: 0;
+}
+@font-face {
+    font-family: "ongdo";
+    src:url("../Font/Rubik/Rubik-Italic-VariableFont_wght.ttf");
+}
+span{
+    font-family: 'ongdo';
+  }
+#Td1{
+    text-align: center;
+    color: rgba(48,154,172,255);
+    h1{
+        font-family: "Brush Script MT";
+        font-size: 3em;
+    }
+}
+#tag{
+    width: 90%;
+    margin: auto;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: #d0e4ec;
+    text-align: center;
+    a{
+        margin-right: 5%;
+        text-decoration: none;
+        color: black;
+    }
+    
+    img{
+        width: 2%;
+    }
+    button{
+        border: hidden;
+        width: 5%;
+        background-color: white;
+    }
+}
+nav #tag ul li{
+    display: inline;
+}
+/* Phần Thân */
+.container{
+    max-width: 1900px;
+    min-width: 325px;
+    position: relative;
+    top: -10px;
+}
+.box1{
+    background: #E7F1F0;
+    min-height: 900px;
+}
+.boa1{
+    max-width: 500px;
+    min-height: 200px;
+    background: white;
+    border: 5px #C6CFD1 solid;
+    position: relative;
+    left: 35%;
+    top:10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-around;
+}
+.boa1 p,h2{
+    text-align: center;
+    margin: 0px 50px 0 50px;
+}
+.boa1 h2{
+    color: rgba(48,154,172,255);
+}
+
+.img1{
+    position: absolute;
+    top:270px;
+    left: 350px;
+}
+.img1 img{
+    width: 600px;
+}
+
+.boa2{
+    max-width: 700px;
+    min-height: 400px;
+    background: white;
+    position: relative;
+    top: 160px;
+    left: 750px;
+}
+.boa2 p{
+    padding: 30px;
+    margin: 0 100px auto;
+    font-size: 15px;
+    opacity: 0.6;
+}
+
+.box2{
+    background: #FFF3F0;
+    height: 700px;
+    min-height: 400px;
+    position: relative;
+    top: -30px;
+}
+
+.img2{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.img2 img{
+    width: 800px;
+    height: 450px;
+}
+
+.bos{
+    position: relative;
+    background: white;
+    max-width: 700px;
+    min-height: 400px;
+    top: 200px;
+    left: 750px;
+}
+
+.bos p{
+    padding: 30px 0 0;
+    margin: 30px 150px;
+}
+.bos a{
+    padding: 30px 0 0;
+    margin: 30px 150px;
+}
+.bos h2{
+    padding: 30px 0 0;
+    margin: 30px 150px;
+    font-size: 2.5em;
+}
+
+.bos a button{
+    width: 100px;
+    height: 30px;
+    background: #C2274B;
+    color: white;
+    transition: .5s;
+}
+.bos a button:hover{
+    background: white;
+    color: #000;
+    border: 1px red solid;
+}
+.box3{
+    background: #F1C8EC;
+    height: 700px;
+    min-height: 400px;
+    position: relative;
+    top: -80px;
+}
+
+.img3{
+    position: absolute;
+    top: 50px;
+    left: 60px;
+}
+
+.img3 img{
+    width: 800px;
+    height: 450px;
+}
+
+.bod{
+    position: relative;
+    background: white;
+    max-width: 700px;
+    min-height: 400px;
+    top: 200px;
+    left: 750px;
+}
+
+.bod p{
+    padding: 30px 0 0;
+    margin: 30px 150px;
+}
+.bod a{
+    padding: 30px 0 0;
+    margin: 30px 150px;
+}
+.bod h2{
+    padding: 30px 0 0;
+    margin: 30px 150px;
+    font-size: 2.5em;
+}
+
+.bod a button{
+    width: 100px;
+    height: 30px;
+    background: #C2274B;
+    color: white;
+    transition: .5s;
+}
+.bod a button:hover{
+    background: white;
+    color: #000;
+    border: 1px red solid;
+}
+
+.intro{
+    width: 500px;
+    position: relative;
+    left: 500px;
+}
+.introduce{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Introduce*/
+.Dung{
+    width: 470px;
+    height: 250px;
+    background: #EDEBEB;
+    display: flex;
+    margin-left: 30px;
+}
+.Tuan{
+    width: 470px;
+    height: 250px;
+    background: #EDEBEB;
+    display: flex;
+}
+.Ngoc{
+    width: 470px;
+    height: 250px;
+    background: #EDEBEB;
+    display: flex;
+    margin-left: 30px;
+}
+.Bach{
+    width: 470px;
+    height: 250px;
+    background: #EDEBEB;
+    display: flex;
+}
+.Minh{
+    width: 470px;
+    height: 250px;
+    background: #EDEBEB;
+    display: flex;
+    margin-left: 30px;
+    
+}
+.Dungimg{
+    position: relative;
+    top: -20px;
+}
+.Dungimg img{
+    width: 250px;
+    height: 250px;
+}
+.Dunginfor{
+    padding-left: 10px;
+}
+.Dunginfor img{
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+}
+/* Phần Đuôi */
+.foott{
+    display: flex;
+    flex-direction: column;
+    background-color: #e7f1f0;
+    width: 90%;
+    text-align: center;
+    justify-content:center;
+    align-items: center;
+    margin: 15% 5% 0;
+}
+.Join{
+    
+    margin-top: 25px;
+    display: flex;
+    padding: 0 15px;
+    #email{
+        border-top-style: hidden;
+        border-right-style: hidden;
+        border-left-style: hidden;
+        border-bottom-style: groove;
+        background-color: #e7f1f0;
+        outline: none;
+    }
+}
+.foot{
+    display: flex;
+    padding: 5px 15px;
+    margin-bottom: 25px;
+}
+.but button{
+    height: 30px;
+    border-radius: 40px;
+    background-color: #309aac;
+    color: white;
+}
