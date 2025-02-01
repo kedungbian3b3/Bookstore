@@ -1,10 +1,17 @@
 {
   "version": 2,
   "public": true,
-  "builds": [
-    { "src": "javascript/server.js", "use": "@vercel/node" }
-  ],
-  "routes": [
-    { "src": "/(.*)", "dest": "javascript/server.js" }
+  "rewrites": [
+    { "source": "/", "destination": "/index.html" },
+    { "source": "/aboutus", "destination": "/Aboutus.html" },
+    { "source": "/book", "destination": "/Book.html" },
+    { "source": "/event", "destination": "/event.html" },
+    { "source": "/event2", "destination": "/event2.html" },
+    { "source": "/event3", "destination": "/event3.html" },
+    { "source": "/login", "destination": "/Login.html" },
+    { "source": "/cart", "destination": "/cart.html" },
+    { "source": "/cus", "destination": "/cus.html" },
+    { "source": "/submitevent2", "destination": "/Submitevent2.html" },
+    { "source": "/submitevent3", "destination": "/Submitevent3.html" }
   ]
 }
