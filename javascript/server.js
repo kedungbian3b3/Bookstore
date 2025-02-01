@@ -10,12 +10,15 @@ const PORT = process.env.PORT || 5000;
 app.use(express.json());
 app.use(cors());
 
-// Phục vụ các file tĩnh từ thư mục gốc
-app.use(express.static(path.join(__dirname)));
+// Phục vụ các file tĩnh từ các thư mục cụ thể
+app.use(express.static(path.join(__dirname, 'public')));
+app.use('/css', express.static(path.join(__dirname, 'css')));
+app.use('/javascript', express.static(path.join(__dirname, 'javascript')));
+app.use('/img', express.static(path.join(__dirname, 'img')));
 
 // Route phục vụ trang chủ (index.html)
 app.get("/", (req, res) => {
-    res.sendFile(path.join(__dirname, "index.html"));
+    res.sendFile(path.join(__dirname, "public", "index.html"));
 });
 
 // API để lưu đơn hàng vào CSV
@@ -26,7 +29,7 @@ app.post("/save_order", (req, res) => {
         return res.status(400).json({ message: "Dữ liệu đơn hàng không hợp lệ!" });
     }
 
-    const dataDir = path.join(__dirname, "/Data");
+    const dataDir = path.join(__dirname, "Data");
     if (!fs.existsSync(dataDir)) fs.mkdirSync(dataDir);
 
     const orderDetailsFile = path.join(dataDir, "order_details.csv");
@@ -60,9 +63,15 @@ app.post("/save_order", (req, res) => {
     res.json({ message: "Lưu đơn hàng thành công!" });
 });
 
+// Xử lý tất cả các route khác để trả về index.html (cho SPA)
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "public", "index.html"));
+});
+
 // Khởi chạy server
 app.listen(PORT, () => {
     console.log(`Server đang chạy tại http://localhost:${PORT}`);
 });
 
 module.exports = app; // Cần cho Vercel xử lý serverless
+
